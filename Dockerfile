@@ -3,6 +3,7 @@ MAINTAINER DevOps Team <ops@alayacare.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV POSTGRESQL_RELEASE=9.6
+ENV POSTGRES_PASSWORD=api
 
 RUN apt-get update -qq \
     && apt-get install -yq curl \
