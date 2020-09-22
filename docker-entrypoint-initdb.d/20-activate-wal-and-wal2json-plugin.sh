@@ -1,7 +1,4 @@
 #!/bin/bash
-# install wal2json postgresql plugin
-apt update
-apt install postgresql-9.6-wal2json
 
 # activate wal
 cd "${PGDATA}"
