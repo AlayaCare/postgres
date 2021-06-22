@@ -11,6 +11,7 @@ RUN apt-get update -qq \
     && apt-get install -y -o Dpkg::Options::="--force-overwrite" \
           postgresql-${POSTGRESQL_RELEASE}-postgis-3 \
           postgresql-${POSTGRESQL_RELEASE}-wal2json \
+          postgresql-${POSTGRESQL_RELEASE}-pglogical \
           locales-all \
     && locale-gen "en_US.UTF-8" \
     && apt-get clean \
